@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,34 +9,49 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/01ab678c2c.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
         <h2 class="logo">logo</h2>
-        <nav class="navigation">
+        <div>
+            <nav class="navigation">
+                <a>home</a>
+                <a>about</a>
+                <a>services</a>
+                <a>contact</a>
+                <button class="btnLogo-popup">login</button>
+                <div class="toggle-btn ">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+        <div class="drop-down inactive">
             <a>home</a>
             <a>about</a>
             <a>services</a>
             <a>contact</a>
-            <button class="btnLogo-popup">login</button>
-        </nav>
+            <button class="btnLogo-popup1">login</button>
+        </div>
+
+        
     </header>
 
     <div class="wrapper">
         <span class="icon-close"><i class="fa-solid fa-xmark"></i></span>
         <div class="form-box login">
             <h2>Login</h2>
-            <form action ="#">
+            <form action="#">
                 <div class="input-box">
                     <span class="icon"><i class="fa-solid fa-envelope"></i></span>
                     <input type="email" required>
                     <label>Email</label>
-                </div> 
+                </div>
                 <div class="input-box">
                     <span class="icon"><i class="fa-solid fa-lock"></i></span>
                     <input type="password" required>
                     <label>Password</label>
                 </div>
-               
+
                 <div class="remember-forget">
                     <label>
                         <input type="checkbox">
@@ -49,29 +65,29 @@
                             Register
                         </a></p>
                 </div>
-                
+
             </form>
         </div>
 
         <div class="form-box register">
             <h2>Register</h2>
-            <form action ="#">
+            <form action="#">
                 <div class="input-box">
                     <span class="icon"><i class="fa-solid fa-user"></i></span>
                     <input type="text" required>
                     <label>Username</label>
-                </div> 
+                </div>
                 <div class="input-box">
                     <span class="icon"><i class="fa-solid fa-envelope"></i></span>
                     <input type="email" required>
                     <label>Email</label>
-                </div> 
+                </div>
                 <div class="input-box">
                     <span class="icon"><i class="fa-solid fa-lock"></i></span>
                     <input type="password" required>
                     <label>Password</label>
                 </div>
-               
+
                 <div class="remember-forget">
                     <label>
                         <input type="checkbox">
@@ -84,12 +100,13 @@
                             Login
                         </a></p>
                 </div>
-                
+
             </form>
         </div>
     </div>
 
     <script src="script.js"></script>
-    
+
 </body>
+
 </html>
